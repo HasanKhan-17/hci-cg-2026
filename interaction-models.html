@@ -1,12 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interaction Models - Muhammad Hasan Khan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar"></div>
+<script>
+fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+  });
+</script>
+
 <header>
 <h1>Interaction Models</h1>
+<p><strong>Name:</strong> Muhammad Hasan Khan | <strong>Seat No:</strong> B23110006099</p>
 </header>
 
 <main>
 <section>
 <h2>Overview</h2>
 <p>
-Interaction models allow designers to predict user behavior and evaluate interface efficiency.
+Interaction models help designers predict user behavior and evaluate interface efficiency.
 They provide structured frameworks for analyzing tasks and system feedback.
 </p>
 </section>
@@ -14,37 +35,41 @@ They provide structured frameworks for analyzing tasks and system feedback.
 <section>
 <h2>Norman’s Model of Interaction</h2>
 <p>
-Norman describes interaction as a cycle of goal formation, execution, and evaluation.
-The gulfs of execution and evaluation show the gaps between user intentions and system
-responses (Dix et al., Chapter 7).
+Norman’s model describes interaction as a cycle of goal formation, execution, and evaluation.
+The gulfs of execution and evaluation highlight gaps between user intentions and system responses (Dix et al., Chapter 7).
 </p>
-<p>Example: Clicking a "Submit" button and receiving confirmation illustrates execution and evaluation steps.</p>
+<p>Example: Clicking "Submit" and receiving confirmation demonstrates execution and evaluation steps.</p>
 </section>
 
 <section>
 <h2>GOMS Model</h2>
 <p>
-GOMS (Goals, Operators, Methods, Selection rules) predicts expert user performance
-by breaking tasks into measurable components (Dix et al., Chapter 8).
+GOMS (Goals, Operators, Methods, Selection rules) predicts expert user performance by breaking tasks into measurable components (Dix et al., Chapter 8).
 </p>
-<p>Example: Filling a form using a consistent sequence of keystrokes demonstrates GOMS application.</p>
+<p>Example: Filling a form using a consistent sequence of keystrokes shows GOMS in practice.</p>
 </section>
 
 <section>
 <h2>Keystroke-Level Model (KLM)</h2>
 <p>
-KLM estimates task completion time based on low-level actions like keystrokes,
-pointing, and mental preparation (Dix et al., Chapter 8).
+KLM estimates task completion time based on low-level actions like keystrokes, pointing, and mental preparation (Dix et al., Chapter 8).
 </p>
-<p>Example: Calculating the time for copying text from one field to another using KLM operators.</p>
+<p>Example: Calculating the time to copy text between fields using KLM operators.</p>
 </section>
 
 <section>
 <h2>Reflection</h2>
 <p>
-Using interaction models, designers can identify inefficiencies and design
-interfaces that reduce errors and cognitive load, improving overall usability.
+Interaction models guide usability evaluation and interface design by identifying inefficiencies and reducing cognitive load.
 </p>
 </section>
 </main>
+
+<footer>
+<p>&copy; 2026 Muhammad Hasan Khan</p>
+</footer>
+
+</body>
+</html>
+
 
