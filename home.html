@@ -7,6 +7,17 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<!-- Navbar -->
+<div id="navbar"></div>
+<script>
+fetch('navbar.html')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('navbar').innerHTML = data;
+  });
+</script>
+
 <header>
 <h1>Human–Computer Interaction</h1>
 <p><strong>Name:</strong> Muhammad Hasan Khan | <strong>Seat No:</strong> B23110006099</p>
@@ -45,11 +56,12 @@ Dix, A., Finlay, J., Abowd, G. D., & Beale, R. <br>
 Chapter references are used throughout the portfolio to maintain edition independence.
 </p>
 </section>
-</main>
 
 <footer>
 <p>&copy; 2026 Muhammad Hasan Khan</p>
 </footer>
+
 </body>
 </html>
+
 
